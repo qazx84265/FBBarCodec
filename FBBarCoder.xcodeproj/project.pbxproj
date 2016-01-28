@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EC0E51AE1C59C859005A566C /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0E51AD1C59C859005A566C /* UIView+Extension.m */; };
 		EC0E51B01C59E991005A566C /* qrcode_scan_btn_flip_camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0E51AF1C59E991005A566C /* qrcode_scan_btn_flip_camera@2x.png */; };
+		EC0E51BC1C5A1C12005A566C /* FBBarCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0E51B41C5A1C12005A566C /* FBBarCodeGenerator.m */; };
+		EC0E51BD1C5A1C12005A566C /* FBBarCodeScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0E51B61C5A1C12005A566C /* FBBarCodeScanner.m */; };
+		EC0E51BE1C5A1C12005A566C /* FBBarCodeScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0E51B91C5A1C12005A566C /* FBBarCodeScanViewController.m */; };
+		EC0E51BF1C5A1C12005A566C /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0E51BB1C5A1C12005A566C /* UIView+Extension.m */; };
 		ECB2D6F11C58A722009B86DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB2D6F01C58A722009B86DA /* main.m */; };
 		ECB2D6F41C58A722009B86DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB2D6F31C58A722009B86DA /* AppDelegate.m */; };
 		ECB2D6F71C58A722009B86DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB2D6F61C58A722009B86DA /* ViewController.m */; };
 		ECB2D6FA1C58A722009B86DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECB2D6F81C58A722009B86DA /* Main.storyboard */; };
 		ECB2D6FC1C58A722009B86DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECB2D6FB1C58A722009B86DA /* Assets.xcassets */; };
 		ECB2D6FF1C58A722009B86DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECB2D6FD1C58A722009B86DA /* LaunchScreen.storyboard */; };
-		ECB2D7091C58A869009B86DA /* FBBarCodeScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB2D7081C58A869009B86DA /* FBBarCodeScanner.m */; };
-		ECB2D70C1C58A88A009B86DA /* FBBarCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB2D70B1C58A88A009B86DA /* FBBarCodeGenerator.m */; };
 		ECB2D7331C58A9D5009B86DA /* 6824500_006_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECB2D7121C58A9D5009B86DA /* 6824500_006_thumb.jpg */; };
 		ECB2D7341C58A9D5009B86DA /* qrcode_scan_btn_flash_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB2D7131C58A9D5009B86DA /* qrcode_scan_btn_flash_down@2x.png */; };
 		ECB2D7351C58A9D5009B86DA /* qrcode_scan_btn_flash_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB2D7141C58A9D5009B86DA /* qrcode_scan_btn_flash_nor@2x.png */; };
@@ -41,13 +42,18 @@
 		ECB2D7481C58A9D5009B86DA /* qrspec.c in Sources */ = {isa = PBXBuildFile; fileRef = ECB2D72D1C58A9D5009B86DA /* qrspec.c */; };
 		ECB2D7491C58A9D5009B86DA /* rscode.c in Sources */ = {isa = PBXBuildFile; fileRef = ECB2D72F1C58A9D5009B86DA /* rscode.c */; };
 		ECB2D74A1C58A9D5009B86DA /* split.c in Sources */ = {isa = PBXBuildFile; fileRef = ECB2D7311C58A9D5009B86DA /* split.c */; };
-		ECB2D74D1C58B36A009B86DA /* FBBarCodeScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB2D74C1C58B36A009B86DA /* FBBarCodeScanViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EC0E51AC1C59C859005A566C /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
-		EC0E51AD1C59C859005A566C /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		EC0E51AF1C59E991005A566C /* qrcode_scan_btn_flip_camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_scan_btn_flip_camera@2x.png"; sourceTree = "<group>"; };
+		EC0E51B31C5A1C12005A566C /* FBBarCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBBarCodeGenerator.h; sourceTree = "<group>"; };
+		EC0E51B41C5A1C12005A566C /* FBBarCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBBarCodeGenerator.m; sourceTree = "<group>"; };
+		EC0E51B51C5A1C12005A566C /* FBBarCodeScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBBarCodeScanner.h; sourceTree = "<group>"; };
+		EC0E51B61C5A1C12005A566C /* FBBarCodeScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBBarCodeScanner.m; sourceTree = "<group>"; };
+		EC0E51B81C5A1C12005A566C /* FBBarCodeScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBBarCodeScanViewController.h; sourceTree = "<group>"; };
+		EC0E51B91C5A1C12005A566C /* FBBarCodeScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBBarCodeScanViewController.m; sourceTree = "<group>"; };
+		EC0E51BA1C5A1C12005A566C /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		EC0E51BB1C5A1C12005A566C /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		ECB2D6EC1C58A722009B86DA /* FBBarCoder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBBarCoder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB2D6F01C58A722009B86DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ECB2D6F21C58A722009B86DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,10 +64,6 @@
 		ECB2D6FB1C58A722009B86DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECB2D6FE1C58A722009B86DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECB2D7001C58A722009B86DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ECB2D7071C58A869009B86DA /* FBBarCodeScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBBarCodeScanner.h; sourceTree = "<group>"; };
-		ECB2D7081C58A869009B86DA /* FBBarCodeScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBBarCodeScanner.m; sourceTree = "<group>"; };
-		ECB2D70A1C58A88A009B86DA /* FBBarCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBBarCodeGenerator.h; sourceTree = "<group>"; };
-		ECB2D70B1C58A88A009B86DA /* FBBarCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBBarCodeGenerator.m; sourceTree = "<group>"; };
 		ECB2D7121C58A9D5009B86DA /* 6824500_006_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6824500_006_thumb.jpg; sourceTree = "<group>"; };
 		ECB2D7131C58A9D5009B86DA /* qrcode_scan_btn_flash_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_scan_btn_flash_down@2x.png"; sourceTree = "<group>"; };
 		ECB2D7141C58A9D5009B86DA /* qrcode_scan_btn_flash_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_scan_btn_flash_nor@2x.png"; sourceTree = "<group>"; };
@@ -94,8 +96,6 @@
 		ECB2D7301C58A9D5009B86DA /* rscode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rscode.h; sourceTree = "<group>"; };
 		ECB2D7311C58A9D5009B86DA /* split.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = split.c; sourceTree = "<group>"; };
 		ECB2D7321C58A9D5009B86DA /* split.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = split.h; sourceTree = "<group>"; };
-		ECB2D74B1C58B36A009B86DA /* FBBarCodeScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBBarCodeScanViewController.h; sourceTree = "<group>"; };
-		ECB2D74C1C58B36A009B86DA /* FBBarCodeScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBBarCodeScanViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +109,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC0E51B11C5A1C12005A566C /* FBBarCoder */ = {
+			isa = PBXGroup;
+			children = (
+				EC0E51B21C5A1C12005A566C /* FBBarCoders */,
+				EC0E51B71C5A1C12005A566C /* FBBarCoderUI */,
+			);
+			path = FBBarCoder;
+			sourceTree = "<group>";
+		};
+		EC0E51B21C5A1C12005A566C /* FBBarCoders */ = {
+			isa = PBXGroup;
+			children = (
+				EC0E51B31C5A1C12005A566C /* FBBarCodeGenerator.h */,
+				EC0E51B41C5A1C12005A566C /* FBBarCodeGenerator.m */,
+				EC0E51B51C5A1C12005A566C /* FBBarCodeScanner.h */,
+				EC0E51B61C5A1C12005A566C /* FBBarCodeScanner.m */,
+			);
+			path = FBBarCoders;
+			sourceTree = "<group>";
+		};
+		EC0E51B71C5A1C12005A566C /* FBBarCoderUI */ = {
+			isa = PBXGroup;
+			children = (
+				EC0E51B81C5A1C12005A566C /* FBBarCodeScanViewController.h */,
+				EC0E51B91C5A1C12005A566C /* FBBarCodeScanViewController.m */,
+				EC0E51BA1C5A1C12005A566C /* UIView+Extension.h */,
+				EC0E51BB1C5A1C12005A566C /* UIView+Extension.m */,
+			);
+			path = FBBarCoderUI;
+			sourceTree = "<group>";
+		};
 		ECB2D6E31C58A722009B86DA = {
 			isa = PBXGroup;
 			children = (
@@ -128,10 +159,9 @@
 		ECB2D6EE1C58A722009B86DA /* FBBarCoder */ = {
 			isa = PBXGroup;
 			children = (
+				EC0E51B11C5A1C12005A566C /* FBBarCoder */,
 				ECB2D7111C58A9D5009B86DA /* images */,
 				ECB2D7221C58A9D5009B86DA /* libqrencode */,
-				ECB2D70D1C58A8B3009B86DA /* BarCodeUI */,
-				ECB2D7061C58A841009B86DA /* BarCoders */,
 				ECB2D6F21C58A722009B86DA /* AppDelegate.h */,
 				ECB2D6F31C58A722009B86DA /* AppDelegate.m */,
 				ECB2D6F51C58A722009B86DA /* ViewController.h */,
@@ -151,28 +181,6 @@
 				ECB2D6F01C58A722009B86DA /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		ECB2D7061C58A841009B86DA /* BarCoders */ = {
-			isa = PBXGroup;
-			children = (
-				ECB2D7071C58A869009B86DA /* FBBarCodeScanner.h */,
-				ECB2D7081C58A869009B86DA /* FBBarCodeScanner.m */,
-				ECB2D70A1C58A88A009B86DA /* FBBarCodeGenerator.h */,
-				ECB2D70B1C58A88A009B86DA /* FBBarCodeGenerator.m */,
-			);
-			name = BarCoders;
-			sourceTree = "<group>";
-		};
-		ECB2D70D1C58A8B3009B86DA /* BarCodeUI */ = {
-			isa = PBXGroup;
-			children = (
-				ECB2D74B1C58B36A009B86DA /* FBBarCodeScanViewController.h */,
-				ECB2D74C1C58B36A009B86DA /* FBBarCodeScanViewController.m */,
-				EC0E51AC1C59C859005A566C /* UIView+Extension.h */,
-				EC0E51AD1C59C859005A566C /* UIView+Extension.m */,
-			);
-			name = BarCodeUI;
 			sourceTree = "<group>";
 		};
 		ECB2D7111C58A9D5009B86DA /* images */ = {
@@ -309,21 +317,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC0E51AE1C59C859005A566C /* UIView+Extension.m in Sources */,
+				EC0E51BF1C5A1C12005A566C /* UIView+Extension.m in Sources */,
+				EC0E51BD1C5A1C12005A566C /* FBBarCodeScanner.m in Sources */,
 				ECB2D6F71C58A722009B86DA /* ViewController.m in Sources */,
 				ECB2D7491C58A9D5009B86DA /* rscode.c in Sources */,
+				EC0E51BC1C5A1C12005A566C /* FBBarCodeGenerator.m in Sources */,
 				ECB2D6F41C58A722009B86DA /* AppDelegate.m in Sources */,
 				ECB2D7461C58A9D5009B86DA /* qrencode.c in Sources */,
-				ECB2D70C1C58A88A009B86DA /* FBBarCodeGenerator.m in Sources */,
+				EC0E51BE1C5A1C12005A566C /* FBBarCodeScanViewController.m in Sources */,
 				ECB2D7441C58A9D5009B86DA /* mask.c in Sources */,
-				ECB2D74D1C58B36A009B86DA /* FBBarCodeScanViewController.m in Sources */,
 				ECB2D7431C58A9D5009B86DA /* bitstream.c in Sources */,
 				ECB2D7451C58A9D5009B86DA /* QRCodeGenerator.m in Sources */,
 				ECB2D7481C58A9D5009B86DA /* qrspec.c in Sources */,
 				ECB2D6F11C58A722009B86DA /* main.m in Sources */,
 				ECB2D7471C58A9D5009B86DA /* qrinput.c in Sources */,
 				ECB2D74A1C58A9D5009B86DA /* split.c in Sources */,
-				ECB2D7091C58A869009B86DA /* FBBarCodeScanner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
