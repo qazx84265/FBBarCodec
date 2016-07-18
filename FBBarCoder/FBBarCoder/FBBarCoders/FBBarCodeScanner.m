@@ -97,10 +97,6 @@
 
 
 
-
-
-
-
 #pragma mark -- init
 
 - (instancetype)initWithPreviewView:(UIView *)previewView {
@@ -257,7 +253,9 @@
         }
     }
     
-    self.scanResultBlock(codes);
+    if (self.scanResultBlock) {
+        self.scanResultBlock(codes);
+    }
 }
 
 

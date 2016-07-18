@@ -29,7 +29,7 @@ static const CGFloat kMargin = 30;
 @property (nonatomic, strong) UIView *scanWindow;
 @property (nonatomic, strong) UIImageView *scanNetImageView;
 
-
+@property (nonatomic, strong) NSBundle* imgBundle;
 @property (nonatomic, strong) FBBarCodeScanner *scanner;
 @end
 
@@ -44,7 +44,7 @@ static const CGFloat kMargin = 30;
 -(void)viewDidDisappear:(BOOL)animated {
     
 //    self.navigationController.navigationBar.hidden=NO;
-    
+    [super viewDidDisappear:animated];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -54,9 +54,10 @@ static const CGFloat kMargin = 30;
     // Default animation
     self.scanAnimationType = ScanAnimationTypeGrid;
     
-    
-    
-    
+    NSBundle* bundle = [NSBundle bundleForClass:[FBBarCodeScanViewController class]];
+    NSURL* url = [bundle URLForResource:@"FBBarCodec" withExtension:@"bundle"];
+    self.imgBundle = [NSBundle bundleWithURL:url];
+
     //遮罩
     [self setupMaskView];
     //扫描区域
@@ -65,7 +66,6 @@ static const CGFloat kMargin = 30;
     [self setupBottomBar];
 
 
-    
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(resumeAnimation) name:UIApplicationWillEnterForegroundNotification object:nil];
     
     //开始扫描
@@ -104,7 +104,7 @@ static const CGFloat kMargin = 30;
     //1.返回
     UIButton *backBtn=[UIButton buttonWithType:UIButtonTypeCustom];
     backBtn.frame = CGRectMake(20, 13, 24, 24);
-    [backBtn setBackgroundImage:[UIImage imageNamed:@"qrcode_scan_titlebar_back_nor"] forState:UIControlStateNormal];
+    [backBtn setBackgroundImage:[UIImage imageNamed:[self.imgBundle pathForResource:@"qrcode_scan_titlebar_back_nor@2x" ofType:@"png"]] forState:UIControlStateNormal];
     backBtn.contentMode=UIViewContentModeScaleAspectFit;
     [backBtn addTarget:self action:@selector(disMiss) forControlEvents:UIControlEventTouchUpInside];
     [bottomView addSubview:backBtn];
@@ -112,7 +112,7 @@ static const CGFloat kMargin = 30;
     //2.相册
     UIButton * albumBtn=[UIButton buttonWithType:UIButtonTypeCustom];
     albumBtn.frame = CGRectMake(100, 0, 35, 49);
-    [albumBtn setBackgroundImage:[UIImage imageNamed:@"qrcode_scan_btn_photo_down"] forState:UIControlStateNormal];
+    [albumBtn setBackgroundImage:[UIImage imageNamed:[self.imgBundle pathForResource:@"qrcode_scan_btn_photo_down@2x" ofType:@"png"]] forState:UIControlStateNormal];
     albumBtn.contentMode=UIViewContentModeScaleAspectFit;
     [albumBtn addTarget:self action:@selector(myAlbum) forControlEvents:UIControlEventTouchUpInside];
     [bottomView addSubview:albumBtn];
@@ -121,7 +121,7 @@ static const CGFloat kMargin = 30;
     if ([self.scanner hasTorch]) {
         UIButton * flashBtn=[UIButton buttonWithType:UIButtonTypeCustom];
         flashBtn.frame = CGRectMake(CGRectGetMaxX(albumBtn.frame)+20,0, 35, 49);
-        [flashBtn setBackgroundImage:[UIImage imageNamed:@"qrcode_scan_btn_flash_down"] forState:UIControlStateNormal];
+        [flashBtn setBackgroundImage:[UIImage imageNamed:[self.imgBundle pathForResource:@"qrcode_scan_btn_flash_down@2x" ofType:@"png"]] forState:UIControlStateNormal];
         flashBtn.contentMode=UIViewContentModeScaleAspectFit;
         [flashBtn addTarget:self action:@selector(openFlash:) forControlEvents:UIControlEventTouchUpInside];
         [bottomView addSubview:flashBtn];
@@ -132,14 +132,16 @@ static const CGFloat kMargin = 30;
         
         UIButton *cameraFlipBtn=[UIButton buttonWithType:UIButtonTypeCustom];
         cameraFlipBtn.frame = CGRectMake(CGRectGetMaxX(albumBtn.frame)+20+35+20,0, 40, 32);
-        [cameraFlipBtn setBackgroundImage:[UIImage imageNamed:@"qrcode_scan_btn_flip_camera"] forState:UIControlStateNormal];
+        [cameraFlipBtn setBackgroundImage:[UIImage imageNamed:[self.imgBundle pathForResource:@"qrcode_scan_btn_flip_camera@2x" ofType:@"png"]] forState:UIControlStateNormal];
         cameraFlipBtn.contentMode=UIViewContentModeScaleAspectFit;
         [cameraFlipBtn addTarget:self action:@selector(flipCamera:) forControlEvents:UIControlEventTouchUpInside];
         [bottomView addSubview:cameraFlipBtn];
     }
 }
-- (void)setupScanWindowView
-{
+
+
+- (void)setupScanWindowView {
+    
     CGFloat scanWindowH = SCREEN_WIDTH - kMargin * 2;
     CGFloat scanWindowW = SCREEN_WIDTH - kMargin * 2;
     _scanWindow = [[UIView alloc] initWithFrame:CGRectMake(kMargin, kBorderW, scanWindowW, scanWindowH)];
@@ -151,19 +153,19 @@ static const CGFloat kMargin = 30;
     CGFloat buttonWH = 19;
     
     UIButton *topLeft = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, buttonWH, buttonWH)];
-    [topLeft setImage:[UIImage imageNamed:@"scan_1"] forState:UIControlStateNormal];
+    [topLeft setImage:[UIImage imageNamed:[self.imgBundle pathForResource:@"scan_1@2x" ofType:@"png"]] forState:UIControlStateNormal];
     [_scanWindow addSubview:topLeft];
     
     UIButton *topRight = [[UIButton alloc] initWithFrame:CGRectMake(scanWindowW - buttonWH, 0, buttonWH, buttonWH)];
-    [topRight setImage:[UIImage imageNamed:@"scan_2"] forState:UIControlStateNormal];
+    [topRight setImage:[UIImage imageNamed:[self.imgBundle pathForResource:@"scan_2@2x" ofType:@"png"]] forState:UIControlStateNormal];
     [_scanWindow addSubview:topRight];
     
     UIButton *bottomLeft = [[UIButton alloc] initWithFrame:CGRectMake(0, scanWindowH - buttonWH, buttonWH, buttonWH)];
-    [bottomLeft setImage:[UIImage imageNamed:@"scan_3"] forState:UIControlStateNormal];
+    [bottomLeft setImage:[UIImage imageNamed:[self.imgBundle pathForResource:@"scan_3@2x" ofType:@"png"]] forState:UIControlStateNormal];
     [_scanWindow addSubview:bottomLeft];
     
     UIButton *bottomRight = [[UIButton alloc] initWithFrame:CGRectMake(topRight.originX, bottomLeft.originY, buttonWH, buttonWH)];
-    [bottomRight setImage:[UIImage imageNamed:@"scan_4"] forState:UIControlStateNormal];
+    [bottomRight setImage:[UIImage imageNamed:[self.imgBundle pathForResource:@"scan_4@2x" ofType:@"png"]] forState:UIControlStateNormal];
     [_scanWindow addSubview:bottomRight];
     
     
@@ -233,7 +235,7 @@ static const CGFloat kMargin = 30;
         ALERT_VIEW(scannedResult);
     }
     else{
-        ALERT_VIEW(@"该图片没有包含一个二维码！");
+        ALERT_VIEW(@"该图片不包含二维码！");
     }
 }
 
@@ -264,7 +266,7 @@ static const CGFloat kMargin = 30;
     if (!_scanNetImageView) {
         
         //扫描条
-        _scanNetImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:self.scanAnimationType==ScanAnimationTypeLine? @"qrcode_scan_light_green":@"scan_net"]];
+        _scanNetImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:self.scanAnimationType==ScanAnimationTypeLine? [self.imgBundle pathForResource:@"qrcode_scan_light_green@2x" ofType:@"png"]:[self.imgBundle pathForResource:@"scan_net@2x" ofType:@"png"]]];
         
         CGFloat scanNetImageViewH = 241;
         CGFloat scanWindowH = SCREEN_WIDTH - kMargin * 2;
@@ -316,8 +318,11 @@ static const CGFloat kMargin = 30;
             [weakSelf.scanner startScanningWithBlock:^(NSArray *results) {
                 if (results && results.count>0) {
                     AVMetadataMachineReadableCodeObject *obj = [results objectAtIndex:0];
-                    NSLog(@"Scan result: %@", obj.stringValue);
-                    ALERT_VIEW(obj.stringValue);
+                    //ALERT_VIEW(obj.stringValue);
+                    
+                    if (self.scanComplete) {
+                        self.scanComplete(obj.stringValue);
+                    }
                     [weakSelf disMiss];
                 }
             }];
@@ -376,6 +381,16 @@ static const CGFloat kMargin = 30;
 }
 */
 
+
+- (void)setScanComplete:(scanComplete)scanComplete {
+    if (scanComplete) {
+        _scanComplete = [scanComplete copy];
+    }
+}
+
+- (void)setScanAnimationType:(ScanAnimationType)scanAnimationType {
+    _scanAnimationType = scanAnimationType;
+}
 
 
 - (BOOL)shouldAutorotate {

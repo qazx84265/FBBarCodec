@@ -7,7 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EC0E51B01C59E991005A566C /* qrcode_scan_btn_flip_camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0E51AF1C59E991005A566C /* qrcode_scan_btn_flip_camera@2x.png */; };
+		AACCE9A81D3CF9E200257A34 /* thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AACCE9A71D3CF9E200257A34 /* thumb.jpg */; };
+		AACCE9BB1D3CF9F500257A34 /* FBBarCodec.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AACCE9A91D3CF9F500257A34 /* FBBarCodec.bundle */; };
+		AACCE9BC1D3CF9F500257A34 /* bitstream.c in Sources */ = {isa = PBXBuildFile; fileRef = AACCE9AB1D3CF9F500257A34 /* bitstream.c */; };
+		AACCE9BD1D3CF9F500257A34 /* mask.c in Sources */ = {isa = PBXBuildFile; fileRef = AACCE9AD1D3CF9F500257A34 /* mask.c */; };
+		AACCE9BE1D3CF9F500257A34 /* QRCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AACCE9B01D3CF9F500257A34 /* QRCodeGenerator.m */; };
+		AACCE9BF1D3CF9F500257A34 /* qrencode.c in Sources */ = {isa = PBXBuildFile; fileRef = AACCE9B11D3CF9F500257A34 /* qrencode.c */; };
+		AACCE9C01D3CF9F500257A34 /* qrinput.c in Sources */ = {isa = PBXBuildFile; fileRef = AACCE9B31D3CF9F500257A34 /* qrinput.c */; };
+		AACCE9C11D3CF9F500257A34 /* qrspec.c in Sources */ = {isa = PBXBuildFile; fileRef = AACCE9B51D3CF9F500257A34 /* qrspec.c */; };
+		AACCE9C21D3CF9F500257A34 /* rscode.c in Sources */ = {isa = PBXBuildFile; fileRef = AACCE9B71D3CF9F500257A34 /* rscode.c */; };
+		AACCE9C31D3CF9F500257A34 /* split.c in Sources */ = {isa = PBXBuildFile; fileRef = AACCE9B91D3CF9F500257A34 /* split.c */; };
 		EC0E51BC1C5A1C12005A566C /* FBBarCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0E51B41C5A1C12005A566C /* FBBarCodeGenerator.m */; };
 		EC0E51BD1C5A1C12005A566C /* FBBarCodeScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0E51B61C5A1C12005A566C /* FBBarCodeScanner.m */; };
 		EC0E51BE1C5A1C12005A566C /* FBBarCodeScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0E51B91C5A1C12005A566C /* FBBarCodeScanViewController.m */; };
@@ -18,34 +27,27 @@
 		ECB2D6FA1C58A722009B86DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECB2D6F81C58A722009B86DA /* Main.storyboard */; };
 		ECB2D6FC1C58A722009B86DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECB2D6FB1C58A722009B86DA /* Assets.xcassets */; };
 		ECB2D6FF1C58A722009B86DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECB2D6FD1C58A722009B86DA /* LaunchScreen.storyboard */; };
-		ECB2D7331C58A9D5009B86DA /* 6824500_006_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECB2D7121C58A9D5009B86DA /* 6824500_006_thumb.jpg */; };
-		ECB2D7341C58A9D5009B86DA /* qrcode_scan_btn_flash_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB2D7131C58A9D5009B86DA /* qrcode_scan_btn_flash_down@2x.png */; };
-		ECB2D7351C58A9D5009B86DA /* qrcode_scan_btn_flash_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB2D7141C58A9D5009B86DA /* qrcode_scan_btn_flash_nor@2x.png */; };
-		ECB2D7361C58A9D5009B86DA /* qrcode_scan_btn_myqrcode_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB2D7151C58A9D5009B86DA /* qrcode_scan_btn_myqrcode_down@2x.png */; };
-		ECB2D7371C58A9D5009B86DA /* qrcode_scan_btn_myqrcode_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB2D7161C58A9D5009B86DA /* qrcode_scan_btn_myqrcode_nor@2x.png */; };
-		ECB2D7381C58A9D5009B86DA /* qrcode_scan_btn_photo_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB2D7171C58A9D5009B86DA /* qrcode_scan_btn_photo_down@2x.png */; };
-		ECB2D7391C58A9D5009B86DA /* qrcode_scan_btn_photo_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB2D7181C58A9D5009B86DA /* qrcode_scan_btn_photo_nor@2x.png */; };
-		ECB2D73A1C58A9D5009B86DA /* qrcode_scan_btn_scan_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB2D7191C58A9D5009B86DA /* qrcode_scan_btn_scan_off@2x.png */; };
-		ECB2D73B1C58A9D5009B86DA /* qrcode_scan_light_green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB2D71A1C58A9D5009B86DA /* qrcode_scan_light_green@2x.png */; };
-		ECB2D73C1C58A9D5009B86DA /* qrcode_scan_titlebar_back_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB2D71B1C58A9D5009B86DA /* qrcode_scan_titlebar_back_nor@2x.png */; };
-		ECB2D73D1C58A9D5009B86DA /* qrcode_scan_titlebar_back_pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB2D71C1C58A9D5009B86DA /* qrcode_scan_titlebar_back_pressed@2x.png */; };
-		ECB2D73E1C58A9D5009B86DA /* scan_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB2D71D1C58A9D5009B86DA /* scan_1@2x.png */; };
-		ECB2D73F1C58A9D5009B86DA /* scan_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB2D71E1C58A9D5009B86DA /* scan_2@2x.png */; };
-		ECB2D7401C58A9D5009B86DA /* scan_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB2D71F1C58A9D5009B86DA /* scan_3@2x.png */; };
-		ECB2D7411C58A9D5009B86DA /* scan_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB2D7201C58A9D5009B86DA /* scan_4@2x.png */; };
-		ECB2D7421C58A9D5009B86DA /* scan_net@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB2D7211C58A9D5009B86DA /* scan_net@2x.png */; };
-		ECB2D7431C58A9D5009B86DA /* bitstream.c in Sources */ = {isa = PBXBuildFile; fileRef = ECB2D7231C58A9D5009B86DA /* bitstream.c */; };
-		ECB2D7441C58A9D5009B86DA /* mask.c in Sources */ = {isa = PBXBuildFile; fileRef = ECB2D7251C58A9D5009B86DA /* mask.c */; };
-		ECB2D7451C58A9D5009B86DA /* QRCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB2D7281C58A9D5009B86DA /* QRCodeGenerator.m */; };
-		ECB2D7461C58A9D5009B86DA /* qrencode.c in Sources */ = {isa = PBXBuildFile; fileRef = ECB2D7291C58A9D5009B86DA /* qrencode.c */; };
-		ECB2D7471C58A9D5009B86DA /* qrinput.c in Sources */ = {isa = PBXBuildFile; fileRef = ECB2D72B1C58A9D5009B86DA /* qrinput.c */; };
-		ECB2D7481C58A9D5009B86DA /* qrspec.c in Sources */ = {isa = PBXBuildFile; fileRef = ECB2D72D1C58A9D5009B86DA /* qrspec.c */; };
-		ECB2D7491C58A9D5009B86DA /* rscode.c in Sources */ = {isa = PBXBuildFile; fileRef = ECB2D72F1C58A9D5009B86DA /* rscode.c */; };
-		ECB2D74A1C58A9D5009B86DA /* split.c in Sources */ = {isa = PBXBuildFile; fileRef = ECB2D7311C58A9D5009B86DA /* split.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EC0E51AF1C59E991005A566C /* qrcode_scan_btn_flip_camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_scan_btn_flip_camera@2x.png"; sourceTree = "<group>"; };
+		AACCE9A71D3CF9E200257A34 /* thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = thumb.jpg; path = FBBarCoder/thumb.jpg; sourceTree = SOURCE_ROOT; };
+		AACCE9A91D3CF9F500257A34 /* FBBarCodec.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBBarCodec.bundle; sourceTree = "<group>"; };
+		AACCE9AB1D3CF9F500257A34 /* bitstream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitstream.c; sourceTree = "<group>"; };
+		AACCE9AC1D3CF9F500257A34 /* bitstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitstream.h; sourceTree = "<group>"; };
+		AACCE9AD1D3CF9F500257A34 /* mask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mask.c; sourceTree = "<group>"; };
+		AACCE9AE1D3CF9F500257A34 /* mask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mask.h; sourceTree = "<group>"; };
+		AACCE9AF1D3CF9F500257A34 /* QRCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeGenerator.h; sourceTree = "<group>"; };
+		AACCE9B01D3CF9F500257A34 /* QRCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeGenerator.m; sourceTree = "<group>"; };
+		AACCE9B11D3CF9F500257A34 /* qrencode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrencode.c; sourceTree = "<group>"; };
+		AACCE9B21D3CF9F500257A34 /* qrencode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrencode.h; sourceTree = "<group>"; };
+		AACCE9B31D3CF9F500257A34 /* qrinput.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrinput.c; sourceTree = "<group>"; };
+		AACCE9B41D3CF9F500257A34 /* qrinput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrinput.h; sourceTree = "<group>"; };
+		AACCE9B51D3CF9F500257A34 /* qrspec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrspec.c; sourceTree = "<group>"; };
+		AACCE9B61D3CF9F500257A34 /* qrspec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrspec.h; sourceTree = "<group>"; };
+		AACCE9B71D3CF9F500257A34 /* rscode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rscode.c; sourceTree = "<group>"; };
+		AACCE9B81D3CF9F500257A34 /* rscode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rscode.h; sourceTree = "<group>"; };
+		AACCE9B91D3CF9F500257A34 /* split.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = split.c; sourceTree = "<group>"; };
+		AACCE9BA1D3CF9F500257A34 /* split.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = split.h; sourceTree = "<group>"; };
 		EC0E51B31C5A1C12005A566C /* FBBarCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBBarCodeGenerator.h; sourceTree = "<group>"; };
 		EC0E51B41C5A1C12005A566C /* FBBarCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBBarCodeGenerator.m; sourceTree = "<group>"; };
 		EC0E51B51C5A1C12005A566C /* FBBarCodeScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBBarCodeScanner.h; sourceTree = "<group>"; };
@@ -64,38 +66,6 @@
 		ECB2D6FB1C58A722009B86DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECB2D6FE1C58A722009B86DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECB2D7001C58A722009B86DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ECB2D7121C58A9D5009B86DA /* 6824500_006_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6824500_006_thumb.jpg; sourceTree = "<group>"; };
-		ECB2D7131C58A9D5009B86DA /* qrcode_scan_btn_flash_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_scan_btn_flash_down@2x.png"; sourceTree = "<group>"; };
-		ECB2D7141C58A9D5009B86DA /* qrcode_scan_btn_flash_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_scan_btn_flash_nor@2x.png"; sourceTree = "<group>"; };
-		ECB2D7151C58A9D5009B86DA /* qrcode_scan_btn_myqrcode_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_scan_btn_myqrcode_down@2x.png"; sourceTree = "<group>"; };
-		ECB2D7161C58A9D5009B86DA /* qrcode_scan_btn_myqrcode_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_scan_btn_myqrcode_nor@2x.png"; sourceTree = "<group>"; };
-		ECB2D7171C58A9D5009B86DA /* qrcode_scan_btn_photo_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_scan_btn_photo_down@2x.png"; sourceTree = "<group>"; };
-		ECB2D7181C58A9D5009B86DA /* qrcode_scan_btn_photo_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_scan_btn_photo_nor@2x.png"; sourceTree = "<group>"; };
-		ECB2D7191C58A9D5009B86DA /* qrcode_scan_btn_scan_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_scan_btn_scan_off@2x.png"; sourceTree = "<group>"; };
-		ECB2D71A1C58A9D5009B86DA /* qrcode_scan_light_green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_scan_light_green@2x.png"; sourceTree = "<group>"; };
-		ECB2D71B1C58A9D5009B86DA /* qrcode_scan_titlebar_back_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_scan_titlebar_back_nor@2x.png"; sourceTree = "<group>"; };
-		ECB2D71C1C58A9D5009B86DA /* qrcode_scan_titlebar_back_pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_scan_titlebar_back_pressed@2x.png"; sourceTree = "<group>"; };
-		ECB2D71D1C58A9D5009B86DA /* scan_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scan_1@2x.png"; sourceTree = "<group>"; };
-		ECB2D71E1C58A9D5009B86DA /* scan_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scan_2@2x.png"; sourceTree = "<group>"; };
-		ECB2D71F1C58A9D5009B86DA /* scan_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scan_3@2x.png"; sourceTree = "<group>"; };
-		ECB2D7201C58A9D5009B86DA /* scan_4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scan_4@2x.png"; sourceTree = "<group>"; };
-		ECB2D7211C58A9D5009B86DA /* scan_net@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scan_net@2x.png"; sourceTree = "<group>"; };
-		ECB2D7231C58A9D5009B86DA /* bitstream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitstream.c; sourceTree = "<group>"; };
-		ECB2D7241C58A9D5009B86DA /* bitstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitstream.h; sourceTree = "<group>"; };
-		ECB2D7251C58A9D5009B86DA /* mask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mask.c; sourceTree = "<group>"; };
-		ECB2D7261C58A9D5009B86DA /* mask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mask.h; sourceTree = "<group>"; };
-		ECB2D7271C58A9D5009B86DA /* QRCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeGenerator.h; sourceTree = "<group>"; };
-		ECB2D7281C58A9D5009B86DA /* QRCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeGenerator.m; sourceTree = "<group>"; };
-		ECB2D7291C58A9D5009B86DA /* qrencode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrencode.c; sourceTree = "<group>"; };
-		ECB2D72A1C58A9D5009B86DA /* qrencode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrencode.h; sourceTree = "<group>"; };
-		ECB2D72B1C58A9D5009B86DA /* qrinput.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrinput.c; sourceTree = "<group>"; };
-		ECB2D72C1C58A9D5009B86DA /* qrinput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrinput.h; sourceTree = "<group>"; };
-		ECB2D72D1C58A9D5009B86DA /* qrspec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrspec.c; sourceTree = "<group>"; };
-		ECB2D72E1C58A9D5009B86DA /* qrspec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrspec.h; sourceTree = "<group>"; };
-		ECB2D72F1C58A9D5009B86DA /* rscode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rscode.c; sourceTree = "<group>"; };
-		ECB2D7301C58A9D5009B86DA /* rscode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rscode.h; sourceTree = "<group>"; };
-		ECB2D7311C58A9D5009B86DA /* split.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = split.c; sourceTree = "<group>"; };
-		ECB2D7321C58A9D5009B86DA /* split.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = split.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,9 +79,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AACCE9AA1D3CF9F500257A34 /* libqrencode */ = {
+			isa = PBXGroup;
+			children = (
+				AACCE9AB1D3CF9F500257A34 /* bitstream.c */,
+				AACCE9AC1D3CF9F500257A34 /* bitstream.h */,
+				AACCE9AD1D3CF9F500257A34 /* mask.c */,
+				AACCE9AE1D3CF9F500257A34 /* mask.h */,
+				AACCE9AF1D3CF9F500257A34 /* QRCodeGenerator.h */,
+				AACCE9B01D3CF9F500257A34 /* QRCodeGenerator.m */,
+				AACCE9B11D3CF9F500257A34 /* qrencode.c */,
+				AACCE9B21D3CF9F500257A34 /* qrencode.h */,
+				AACCE9B31D3CF9F500257A34 /* qrinput.c */,
+				AACCE9B41D3CF9F500257A34 /* qrinput.h */,
+				AACCE9B51D3CF9F500257A34 /* qrspec.c */,
+				AACCE9B61D3CF9F500257A34 /* qrspec.h */,
+				AACCE9B71D3CF9F500257A34 /* rscode.c */,
+				AACCE9B81D3CF9F500257A34 /* rscode.h */,
+				AACCE9B91D3CF9F500257A34 /* split.c */,
+				AACCE9BA1D3CF9F500257A34 /* split.h */,
+			);
+			path = libqrencode;
+			sourceTree = "<group>";
+		};
 		EC0E51B11C5A1C12005A566C /* FBBarCoder */ = {
 			isa = PBXGroup;
 			children = (
+				AACCE9A91D3CF9F500257A34 /* FBBarCodec.bundle */,
+				AACCE9AA1D3CF9F500257A34 /* libqrencode */,
 				EC0E51B21C5A1C12005A566C /* FBBarCoders */,
 				EC0E51B71C5A1C12005A566C /* FBBarCoderUI */,
 			);
@@ -160,12 +155,11 @@
 			isa = PBXGroup;
 			children = (
 				EC0E51B11C5A1C12005A566C /* FBBarCoder */,
-				ECB2D7111C58A9D5009B86DA /* images */,
-				ECB2D7221C58A9D5009B86DA /* libqrencode */,
 				ECB2D6F21C58A722009B86DA /* AppDelegate.h */,
 				ECB2D6F31C58A722009B86DA /* AppDelegate.m */,
 				ECB2D6F51C58A722009B86DA /* ViewController.h */,
 				ECB2D6F61C58A722009B86DA /* ViewController.m */,
+				AACCE9A71D3CF9E200257A34 /* thumb.jpg */,
 				ECB2D6F81C58A722009B86DA /* Main.storyboard */,
 				ECB2D6FB1C58A722009B86DA /* Assets.xcassets */,
 				ECB2D6FD1C58A722009B86DA /* LaunchScreen.storyboard */,
@@ -181,53 +175,6 @@
 				ECB2D6F01C58A722009B86DA /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		ECB2D7111C58A9D5009B86DA /* images */ = {
-			isa = PBXGroup;
-			children = (
-				EC0E51AF1C59E991005A566C /* qrcode_scan_btn_flip_camera@2x.png */,
-				ECB2D7121C58A9D5009B86DA /* 6824500_006_thumb.jpg */,
-				ECB2D7131C58A9D5009B86DA /* qrcode_scan_btn_flash_down@2x.png */,
-				ECB2D7141C58A9D5009B86DA /* qrcode_scan_btn_flash_nor@2x.png */,
-				ECB2D7151C58A9D5009B86DA /* qrcode_scan_btn_myqrcode_down@2x.png */,
-				ECB2D7161C58A9D5009B86DA /* qrcode_scan_btn_myqrcode_nor@2x.png */,
-				ECB2D7171C58A9D5009B86DA /* qrcode_scan_btn_photo_down@2x.png */,
-				ECB2D7181C58A9D5009B86DA /* qrcode_scan_btn_photo_nor@2x.png */,
-				ECB2D7191C58A9D5009B86DA /* qrcode_scan_btn_scan_off@2x.png */,
-				ECB2D71A1C58A9D5009B86DA /* qrcode_scan_light_green@2x.png */,
-				ECB2D71B1C58A9D5009B86DA /* qrcode_scan_titlebar_back_nor@2x.png */,
-				ECB2D71C1C58A9D5009B86DA /* qrcode_scan_titlebar_back_pressed@2x.png */,
-				ECB2D71D1C58A9D5009B86DA /* scan_1@2x.png */,
-				ECB2D71E1C58A9D5009B86DA /* scan_2@2x.png */,
-				ECB2D71F1C58A9D5009B86DA /* scan_3@2x.png */,
-				ECB2D7201C58A9D5009B86DA /* scan_4@2x.png */,
-				ECB2D7211C58A9D5009B86DA /* scan_net@2x.png */,
-			);
-			path = images;
-			sourceTree = "<group>";
-		};
-		ECB2D7221C58A9D5009B86DA /* libqrencode */ = {
-			isa = PBXGroup;
-			children = (
-				ECB2D7231C58A9D5009B86DA /* bitstream.c */,
-				ECB2D7241C58A9D5009B86DA /* bitstream.h */,
-				ECB2D7251C58A9D5009B86DA /* mask.c */,
-				ECB2D7261C58A9D5009B86DA /* mask.h */,
-				ECB2D7271C58A9D5009B86DA /* QRCodeGenerator.h */,
-				ECB2D7281C58A9D5009B86DA /* QRCodeGenerator.m */,
-				ECB2D7291C58A9D5009B86DA /* qrencode.c */,
-				ECB2D72A1C58A9D5009B86DA /* qrencode.h */,
-				ECB2D72B1C58A9D5009B86DA /* qrinput.c */,
-				ECB2D72C1C58A9D5009B86DA /* qrinput.h */,
-				ECB2D72D1C58A9D5009B86DA /* qrspec.c */,
-				ECB2D72E1C58A9D5009B86DA /* qrspec.h */,
-				ECB2D72F1C58A9D5009B86DA /* rscode.c */,
-				ECB2D7301C58A9D5009B86DA /* rscode.h */,
-				ECB2D7311C58A9D5009B86DA /* split.c */,
-				ECB2D7321C58A9D5009B86DA /* split.h */,
-			);
-			path = libqrencode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,26 +234,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECB2D73F1C58A9D5009B86DA /* scan_2@2x.png in Resources */,
-				ECB2D7351C58A9D5009B86DA /* qrcode_scan_btn_flash_nor@2x.png in Resources */,
+				AACCE9A81D3CF9E200257A34 /* thumb.jpg in Resources */,
 				ECB2D6FF1C58A722009B86DA /* LaunchScreen.storyboard in Resources */,
-				ECB2D7401C58A9D5009B86DA /* scan_3@2x.png in Resources */,
-				ECB2D7411C58A9D5009B86DA /* scan_4@2x.png in Resources */,
-				ECB2D73D1C58A9D5009B86DA /* qrcode_scan_titlebar_back_pressed@2x.png in Resources */,
-				ECB2D7331C58A9D5009B86DA /* 6824500_006_thumb.jpg in Resources */,
-				ECB2D7421C58A9D5009B86DA /* scan_net@2x.png in Resources */,
 				ECB2D6FC1C58A722009B86DA /* Assets.xcassets in Resources */,
-				ECB2D73B1C58A9D5009B86DA /* qrcode_scan_light_green@2x.png in Resources */,
-				ECB2D7381C58A9D5009B86DA /* qrcode_scan_btn_photo_down@2x.png in Resources */,
-				ECB2D7361C58A9D5009B86DA /* qrcode_scan_btn_myqrcode_down@2x.png in Resources */,
-				ECB2D7391C58A9D5009B86DA /* qrcode_scan_btn_photo_nor@2x.png in Resources */,
-				ECB2D73C1C58A9D5009B86DA /* qrcode_scan_titlebar_back_nor@2x.png in Resources */,
-				EC0E51B01C59E991005A566C /* qrcode_scan_btn_flip_camera@2x.png in Resources */,
 				ECB2D6FA1C58A722009B86DA /* Main.storyboard in Resources */,
-				ECB2D73A1C58A9D5009B86DA /* qrcode_scan_btn_scan_off@2x.png in Resources */,
-				ECB2D7371C58A9D5009B86DA /* qrcode_scan_btn_myqrcode_nor@2x.png in Resources */,
-				ECB2D7341C58A9D5009B86DA /* qrcode_scan_btn_flash_down@2x.png in Resources */,
-				ECB2D73E1C58A9D5009B86DA /* scan_1@2x.png in Resources */,
+				AACCE9BB1D3CF9F500257A34 /* FBBarCodec.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,18 +252,18 @@
 				EC0E51BF1C5A1C12005A566C /* UIView+Extension.m in Sources */,
 				EC0E51BD1C5A1C12005A566C /* FBBarCodeScanner.m in Sources */,
 				ECB2D6F71C58A722009B86DA /* ViewController.m in Sources */,
-				ECB2D7491C58A9D5009B86DA /* rscode.c in Sources */,
+				AACCE9C31D3CF9F500257A34 /* split.c in Sources */,
+				AACCE9C21D3CF9F500257A34 /* rscode.c in Sources */,
 				EC0E51BC1C5A1C12005A566C /* FBBarCodeGenerator.m in Sources */,
+				AACCE9C11D3CF9F500257A34 /* qrspec.c in Sources */,
 				ECB2D6F41C58A722009B86DA /* AppDelegate.m in Sources */,
-				ECB2D7461C58A9D5009B86DA /* qrencode.c in Sources */,
+				AACCE9C01D3CF9F500257A34 /* qrinput.c in Sources */,
+				AACCE9BE1D3CF9F500257A34 /* QRCodeGenerator.m in Sources */,
 				EC0E51BE1C5A1C12005A566C /* FBBarCodeScanViewController.m in Sources */,
-				ECB2D7441C58A9D5009B86DA /* mask.c in Sources */,
-				ECB2D7431C58A9D5009B86DA /* bitstream.c in Sources */,
-				ECB2D7451C58A9D5009B86DA /* QRCodeGenerator.m in Sources */,
-				ECB2D7481C58A9D5009B86DA /* qrspec.c in Sources */,
+				AACCE9BD1D3CF9F500257A34 /* mask.c in Sources */,
 				ECB2D6F11C58A722009B86DA /* main.m in Sources */,
-				ECB2D7471C58A9D5009B86DA /* qrinput.c in Sources */,
-				ECB2D74A1C58A9D5009B86DA /* split.c in Sources */,
+				AACCE9BF1D3CF9F500257A34 /* qrencode.c in Sources */,
+				AACCE9BC1D3CF9F500257A34 /* bitstream.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,7 +377,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FBBarCoder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pureLake.FBBarCoder;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arseeds.commonAppID;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -456,7 +388,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FBBarCoder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pureLake.FBBarCoder;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arseeds.commonAppID;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

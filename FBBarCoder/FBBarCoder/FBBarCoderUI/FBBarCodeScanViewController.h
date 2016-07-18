@@ -14,8 +14,12 @@ typedef NS_ENUM(NSUInteger, ScanAnimationType) {
     ScanAnimationTypeGrid
 };
 
+typedef void (^scanComplete)(NSString* scanResult);
+
+
 @interface FBBarCodeScanViewController : UIViewController
 
 @property (nonatomic, assign) ScanAnimationType scanAnimationType;
 
+@property (nonatomic, copy) scanComplete scanComplete;
 @end

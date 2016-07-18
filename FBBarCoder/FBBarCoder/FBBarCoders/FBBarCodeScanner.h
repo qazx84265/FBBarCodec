@@ -32,10 +32,6 @@ typedef void (^authoResult)(BOOL grant);
 @property (nonatomic, copy) authoResult authResult;
 
 
-
-
-
-
 + (void)requestCameraPermissionWithBlock:(authoResult)authResultBlock;
 
 
